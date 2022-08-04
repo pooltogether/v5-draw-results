@@ -62,7 +62,7 @@ jobs:
       # -------------------------------------------------------- #
       - name: Comment Error
         id: commentError
-        if: steps.drawPrizesRinkebyPTaUSDC5.outputs.exitcode || steps.drawPrizesRinkebyPTaDAI10.outputs.exitcode || steps.drawPrizesRinkebyPTaUSDC15.outputs.exitcode == 1
+        if: steps.drawPrizesRinkebyPTaUSDC5.outputs.exitcode == 1 || steps.drawPrizesRinkebyPTaDAI10.outputs.exitcode == 1 || steps.drawPrizesRinkebyPTaUSDC15.outputs.exitcode == 1
         uses: actions/github-script@v5
         continue-on-error: true
         with:
