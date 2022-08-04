@@ -83,7 +83,7 @@ jobs:
           git config --local user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git config --local user.name "github-actions[bot]"
           git pull
-          git add ./api/prizes/4/
+          git add ./api/prizes/4/0x509a479885019fdcd1bb39cd982d1ab11857ce1d/0x95448a041d34241177b375a65efb34c61ad9e2b3/
           git commit -m "Add draw for Rinkeby (PTaUSDC5) draw ${{steps.drawPrizesRinkebyPTaUSDC5.outputs.drawIds}}"
       - name: Commit Rinkeby (PTaDAI10)
         if: steps.drawPrizesRinkebyPTaDAI10.outputs.runStatus == 'true'
@@ -92,7 +92,7 @@ jobs:
           git config --local user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git config --local user.name "github-actions[bot]"
           git pull
-          git add ./api/prizes/4/
+          git add ./api/prizes/4/0x509a479885019fdcd1bb39cd982d1ab11857ce1d/0x485cb32f8e7159feebf98e19d0f9b2dc7348ac77/
           git commit -m "Add draw for Rinkeby (PTaDAI10) draw ${{steps.drawPrizesRinkebyPTaDAI10.outputs.drawIds}}"
       - name: Commit Rinkeby (PTaUSDC15)
         if: steps.drawPrizesRinkebyPTaUSDC15.outputs.runStatus == 'true'
@@ -101,7 +101,7 @@ jobs:
           git config --local user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git config --local user.name "github-actions[bot]"
           git pull
-          git add ./api/prizes/4/
+          git add ./api/prizes/4/0x509a479885019fdcd1bb39cd982d1ab11857ce1d/0x22d7d499d13ee75210a0f3215a2d8942b5b233b4/
           git commit -m "Add draw for Rinkeby (PTaUSDC15) draw ${{steps.drawPrizesRinkebyPTaUSDC15.outputs.drawIds}}"
       # -------------------------------------------------------- #
       # Push Draw Prizes Computation
