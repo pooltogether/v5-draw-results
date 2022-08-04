@@ -1,0 +1,15 @@
+{
+  "name": "v5-draw-results",
+  "version": "1.0.0",
+  "description": "Periodically runs the v4-cli and stores draw results. Also the data source of the Netlify hosted Prizes API.",
+  "main": "index.js",
+  "repository": "git@github.com:pooltogether/v5-draw-results.git",
+  "author": "PoolTogether Inc.",
+  "license": "MIT",
+  "scripts": {
+    "pwd": "echo ${PWD}"
+  },
+  "dependencies": {
+    "@actions/core": "1.9.0"
+  }
+}
