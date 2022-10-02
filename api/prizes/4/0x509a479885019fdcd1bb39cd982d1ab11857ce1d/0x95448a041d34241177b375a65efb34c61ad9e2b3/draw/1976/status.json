@@ -1,0 +1,10 @@
+{
+  "status": "SUCCESS",
+  "createdAt": 1664744595592,
+  "updatedAt": 1664744597592,
+  "runtime": 2000,
+  "meta": {
+    "prizeLength": 0,
+    "amountsTotal": "0"
+  }
+}
