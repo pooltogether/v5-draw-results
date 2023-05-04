@@ -1,2 +1,3 @@
 # v5-draw-results
-Periodically runs the v4-cli and stores draw results. Also the data source of the Netlify hosted Prizes API.
+
+Periodically runs code to lookup winners for each draw and store the results.

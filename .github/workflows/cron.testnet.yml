@@ -4,7 +4,7 @@ on:
     - cron: "*/60 * * * *" # every hour
   push:
 env:
-  ETHEREUM_RINKEBY_RPC_URL: ${{secrets.ETHEREUM_RINKEBY_RPC_URL}}
+  ETHEREUM_GOERLI_RPC_URL: ${{secrets.ETHEREUM_GOERLI_RPC_URL}}
 jobs:
   runCLI:
     name: PrizePoolNetwork Prizes Computation
@@ -31,38 +31,29 @@ jobs:
           npm install -g @pooltogether/v4-cli@0.2.0-beta.6
           echo "$(npm -g bin)" >> $GITHUB_PATH
       # -------------------------------------------------------- #
-      # Rinkeby (PTaUSDC5)
+      # Goerli (Token Symbol)
       # -------------------------------------------------------- #
-      - name: Rinkeby Draw Prizes PTaUSDC5
-        id: drawPrizesRinkebyPTaUSDC5
+      - name: Goerli Draw Prizes SYMBOL1
+        id: drawPrizesGoerliSYMBOL1
         uses: maddog2050/executable-wrapper@v1
         continue-on-error: true
         with:
           run_command: ptv4 compute poolPrizes -o ${{ github.workspace }}/api/prizes -t 0x95448A041D34241177b375a65efB34C61Ad9e2B3 -c 4 -v 2
       # -------------------------------------------------------- #
-      # Rinkeby (PTaDAI10)
+      # Goerli (TOKEN SYMBOL)
       # -------------------------------------------------------- #
-      - name: Rinkeby Draw Prizes PTaDAI10
-        id: drawPrizesRinkebyPTaDAI10
+      - name: Goerli Draw Prizes SYMBOL2
+        id: drawPrizesGoerliSYMBOL2
         uses: maddog2050/executable-wrapper@v1
         continue-on-error: true
         with:
           run_command: ptv4 compute poolPrizes -o ${{ github.workspace }}/api/prizes -t 0x485cB32f8e7159feebf98e19D0f9b2Dc7348Ac77 -c 4 -v 2
       # -------------------------------------------------------- #
-      # Rinkeby (PTaUSDC15)
-      # -------------------------------------------------------- #
-      - name: Rinkeby Draw Prizes PTaUSDC15
-        id: drawPrizesRinkebyPTaUSDC15
-        uses: maddog2050/executable-wrapper@v1
-        continue-on-error: true
-        with:
-          run_command: ptv4 compute poolPrizes -o ${{ github.workspace }}/api/prizes -t 0x22D7D499D13eE75210A0F3215A2D8942B5B233b4 -c 4 -v 2
-      # -------------------------------------------------------- #
       # Comment Error
       # -------------------------------------------------------- #
       - name: Comment Error
         id: commentError
-        if: steps.drawPrizesRinkebyPTaUSDC5.outputs.exitcode == 1 || steps.drawPrizesRinkebyPTaDAI10.outputs.exitcode == 1 || steps.drawPrizesRinkebyPTaUSDC15.outputs.exitcode == 1
+        if: steps.drawPrizesGoerliSYMBOL1.outputs.exitcode == 1 || steps.drawPrizesGoerliSYMBOL2.outputs.exitcode == 1
         uses: actions/github-script@v5
         continue-on-error: true
         with:
@@ -76,39 +67,30 @@ jobs:
       # Git Commit
       # TODO: Use actions/github-script@v5 to complete commits
       # -------------------------------------------------------- #
-      - name: Commit Rinkeby (PTaUSDC5)
-        if: steps.drawPrizesRinkebyPTaUSDC5.outputs.runStatus == 'true'
+      - name: Commit Goerli (SYMBOL1)
+        if: steps.drawPrizesGoerliSYMBOL1.outputs.runStatus == 'true'
         continue-on-error: true
         run: |
           git config --local user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git config --local user.name "github-actions[bot]"
           git pull
           git add ./api/prizes/4/0x509a479885019fdcd1bb39cd982d1ab11857ce1d/0x95448a041d34241177b375a65efb34c61ad9e2b3/
-          git commit -m "Add draw for Rinkeby (PTaUSDC5) draw ${{steps.drawPrizesRinkebyPTaUSDC5.outputs.drawIds}}"
-      - name: Commit Rinkeby (PTaDAI10)
-        if: steps.drawPrizesRinkebyPTaDAI10.outputs.runStatus == 'true'
-        continue-on-error: true
-        run: |
-          git config --local user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git config --local user.name "github-actions[bot]"
-          git pull
-          git add ./api/prizes/4/0x509a479885019fdcd1bb39cd982d1ab11857ce1d/0x485cb32f8e7159feebf98e19d0f9b2dc7348ac77/
-          git commit -m "Add draw for Rinkeby (PTaDAI10) draw ${{steps.drawPrizesRinkebyPTaDAI10.outputs.drawIds}}"
-      - name: Commit Rinkeby (PTaUSDC15)
-        if: steps.drawPrizesRinkebyPTaUSDC15.outputs.runStatus == 'true'
+          git commit -m "Add draw for Goerli (SYMBOL1) draw ${{steps.drawPrizesGoerliSYMBOL1.outputs.drawIds}}"
+      - name: Commit Goerli (SYMBOL2)
+        if: steps.drawPrizesGoerliSYMBOL2.outputs.runStatus == 'true'
         continue-on-error: true
         run: |
           git config --local user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git config --local user.name "github-actions[bot]"
           git pull
           git add ./api/prizes/4/0x509a479885019fdcd1bb39cd982d1ab11857ce1d/0x22d7d499d13ee75210a0f3215a2d8942b5b233b4/
-          git commit -m "Add draw for Rinkeby (PTaUSDC15) draw ${{steps.drawPrizesRinkebyPTaUSDC15.outputs.drawIds}}"
+          git commit -m "Add draw for Goerli (SYMBOL2) draw ${{steps.drawPrizesGoerliSYMBOL2.outputs.drawIds}}"
       # -------------------------------------------------------- #
       # Push Draw Prizes Computation
       # -------------------------------------------------------- #
       - name: Push changes (if required)
         uses: ad-m/github-push-action@master
-        if: steps.drawPrizesRinkebyPTaUSDC5.outputs.runStatus == 'true' || steps.drawPrizesRinkebyPTaDAI10.outputs.runStatus == 'true' || steps.drawPrizesRinkebyPTaUSDC15.outputs.runStatus == 'true'
+        if: steps.drawPrizesGoerliSYMBOL1.outputs.runStatus == 'true' || steps.drawPrizesGoerliSYMBOL2.outputs.runStatus == 'true'
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           branch: ${{ github.ref }}
