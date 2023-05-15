@@ -29,12 +29,12 @@ jobs:
           install-command: yarn
       - name: Install Typescript
         run: |
-          npm install -g typescript
-          echo "$(npm -g bin)" >> $GITHUB_PATH
+          npm install typescript
+          echo "$(npm bin)" >> $GITHUB_PATH
       - name: Install PoolTogether V5 CLI
         run: |
-          npm install -g @pooltogether/v5-cli@0.0.1-beta.1
-          echo "$(npm -g bin)" >> $GITHUB_PATH
+          npm install @pooltogether/v5-cli@0.0.1-beta.1
+          echo "$(npm bin)" >> $GITHUB_PATH
       # -------------------------------------------------------- #
       # Mumbai (Token Symbol)
       # -------------------------------------------------------- #
@@ -81,7 +81,7 @@ jobs:
       # Git Commit
       # TODO: Use actions/github-script@v5 to complete commits
       # -------------------------------------------------------- #
-      - name: Commit Mumbai (SYMBOL1)
+      - name: Commit Mumbai
         if: steps.drawPrizesMumbai.outputs.runStatus == 'true'
         continue-on-error: true
         run: |
