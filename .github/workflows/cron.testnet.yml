@@ -19,7 +19,7 @@ jobs:
       - name: Checkout repo
         uses: actions/checkout@v3
       - name: Use Node ${{ matrix.node }}
-        uses: actions/setup-node@v1
+        uses: actions/setup-node@v3
         with:
           node-version: ${{ matrix.node }}
       - name: Install Dependencies
@@ -41,7 +41,7 @@ jobs:
       - name: Mumbai Draw Prizes
         id: drawPrizesMumbai
         uses: maddog2050/executable-wrapper@v1
-        continue-on-error: true
+        continue-on-error: false
         with:
           run_command: ptv5 compute drawPrizes -o ${{ github.workspace }}/api/prizes -p 0xA32C8f94191c9295634f0034eb2b0e2749e77974 -c 80001
       # -------------------------------------------------------- #
