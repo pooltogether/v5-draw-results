@@ -35,6 +35,10 @@ jobs:
         run: |
           npm install -g @types/node
           echo "$(npm -g bin)" >> $GITHUB_PATH
+      - name: Install ts-node
+        run: |
+          npm install -g ts-node
+          echo "$(npm -g bin)" >> $GITHUB_PATH
       - name: Install PoolTogether V5 CLI
         run: |
           npm install -g @pooltogether/v5-cli@0.0.1-beta.2
