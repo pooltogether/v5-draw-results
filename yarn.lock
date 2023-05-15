@@ -703,10 +703,10 @@
   resolved "https://registry.yarnpkg.com/@pooltogether/prize-api-schema/-/prize-api-schema-1.0.0-beta.1.tgz#173d36fa93e03dcaca638706c17f9d01db9e07d7"
   integrity sha512-6rSz5xQjBa+rqXjpU83cwBsOdeHdP3KAE+y4dMCDtMx/2qXzP9A20Py9tbTjUS8iivlGYO766jSFneDWOKrdqQ==
 
-"@pooltogether/v5-cli@^0.0.1-beta.1":
-  version "0.0.1-beta.1"
-  resolved "https://registry.yarnpkg.com/@pooltogether/v5-cli/-/v5-cli-0.0.1-beta.1.tgz#43fac3e1b4dd51957e465857fbacb9cb013b849f"
-  integrity sha512-T4b31Bq/12YRCWGfoBHaCDMarSwzWquQmNTvtvjF/oKokpidxwMr87JlbDRWH2OqMB5pk4aPjVVuB5o+BnVXyQ==
+"@pooltogether/v5-cli@^0.0.1-beta.2":
+  version "0.0.1-beta.2"
+  resolved "https://registry.yarnpkg.com/@pooltogether/v5-cli/-/v5-cli-0.0.1-beta.2.tgz#19c7578b95de3b05fa937e214267ed3a74edbf30"
+  integrity sha512-a1lRSILLbxQTyHlVNETyL0K4bCbZygS7GGs2/aBxkoRWSj81ufYIB9yLVBvHswMfiLe0BWsDkKAH6MuZjA+tGw==
   dependencies:
     "@actions/core" "^1.6.0"
     "@ethersproject/bignumber" "^5.5.0"

@@ -37,7 +37,7 @@ jobs:
           echo "$(npm -g bin)" >> $GITHUB_PATH
       - name: Install PoolTogether V5 CLI
         run: |
-          npm install -g @pooltogether/v5-cli@0.0.1-beta.1
+          npm install -g @pooltogether/v5-cli@0.0.1-beta.2
           echo "$(npm -g bin)" >> $GITHUB_PATH
       # -------------------------------------------------------- #
       # Mumbai (Token Symbol)
