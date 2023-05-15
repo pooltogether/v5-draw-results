@@ -5,9 +5,10 @@ on:
   push:
 env:
   ETHEREUM_GOERLI_RPC_URL: ${{secrets.ETHEREUM_GOERLI_RPC_URL}}
+  POLYGON_MUMBAI_RPC_URL: ${{secrets.POLYGON_MUMBAI_RPC_URL}}
 jobs:
   runCLI:
-    name: PrizePoolNetwork Prizes Computation
+    name: PrizePool Prizes Computation
     runs-on: ${{ matrix.os }}
     strategy:
       max-parallel: 1
@@ -26,34 +27,43 @@ jobs:
         uses: bahmutov/npm-install@v1
         with:
           install-command: yarn
-      - name: Install PoolTogether V4 CLI
+      - name: Install PoolTogether V5 Autotasks Library
         run: |
-          npm install -g @pooltogether/v4-cli@0.2.0-beta.6
+          npm install -g @pooltogether/v5-autotasks-library@0.0.1-beta.2
           echo "$(npm -g bin)" >> $GITHUB_PATH
+      # -------------------------------------------------------- #
+      # Mumbai (Token Symbol)
+      # -------------------------------------------------------- #
+      - name: Mumbai Draw Prizes
+        id: drawPrizesMumbai
+        uses: maddog2050/executable-wrapper@v1
+        continue-on-error: true
+        with:
+          run_command: ptv5 compute drawPrizes -o ${{ github.workspace }}/api/prizes -p 0xA32C8f94191c9295634f0034eb2b0e2749e77974 -c 80001
       # -------------------------------------------------------- #
       # Goerli (Token Symbol)
       # -------------------------------------------------------- #
-      - name: Goerli Draw Prizes SYMBOL1
-        id: drawPrizesGoerliSYMBOL1
-        uses: maddog2050/executable-wrapper@v1
-        continue-on-error: true
-        with:
-          run_command: ptv4 compute poolPrizes -o ${{ github.workspace }}/api/prizes -t 0x95448A041D34241177b375a65efB34C61Ad9e2B3 -c 4 -v 2
+      # - name: Goerli Draw Prizes SYMBOL1
+      #   id: drawPrizesGoerliSYMBOL1
+      #   uses: maddog2050/executable-wrapper@v1
+      #   continue-on-error: true
+      #   with:
+      #     run_command: ptv5 compute drawPrizes -o ${{ github.workspace }}/api/prizes -t 0x95448A041D34241177b375a65efB34C61Ad9e2B3 -c 4 -v 2
       # -------------------------------------------------------- #
       # Goerli (TOKEN SYMBOL)
       # -------------------------------------------------------- #
-      - name: Goerli Draw Prizes SYMBOL2
-        id: drawPrizesGoerliSYMBOL2
-        uses: maddog2050/executable-wrapper@v1
-        continue-on-error: true
-        with:
-          run_command: ptv4 compute poolPrizes -o ${{ github.workspace }}/api/prizes -t 0x485cB32f8e7159feebf98e19D0f9b2Dc7348Ac77 -c 4 -v 2
+      # - name: Goerli Draw Prizes SYMBOL2
+      #   id: drawPrizesGoerliSYMBOL2
+      #   uses: maddog2050/executable-wrapper@v1
+      #   continue-on-error: true
+      #   with:
+      #     run_command: ptv5 compute drawPrizes -o ${{ github.workspace }}/api/prizes -t 0x485cB32f8e7159feebf98e19D0f9b2Dc7348Ac77 -c 4 -v 2
       # -------------------------------------------------------- #
       # Comment Error
       # -------------------------------------------------------- #
       - name: Comment Error
         id: commentError
-        if: steps.drawPrizesGoerliSYMBOL1.outputs.exitcode == 1 || steps.drawPrizesGoerliSYMBOL2.outputs.exitcode == 1
+        if: steps.drawPrizesMumbai.outputs.exitcode == 1 #|| steps.drawPrizesGoerliSYMBOL2.outputs.exitcode == 1
         uses: actions/github-script@v5
         continue-on-error: true
         with:
@@ -61,36 +71,45 @@ jobs:
             await github.rest.issues.create({
               owner: context.repo.owner,
               repo: context.repo.repo,
-              title: `Draw Calculator Failed: Exit Code ${process.env.exitCode} (${process.env.errorcode})`
+              title: `Draw Prizes Failed: Exit Code ${process.env.exitCode} (${process.env.errorcode})`
             })
       # -------------------------------------------------------- #
       # Git Commit
       # TODO: Use actions/github-script@v5 to complete commits
       # -------------------------------------------------------- #
-      - name: Commit Goerli (SYMBOL1)
-        if: steps.drawPrizesGoerliSYMBOL1.outputs.runStatus == 'true'
+      - name: Commit Mumbai (SYMBOL1)
+        if: steps.drawPrizesMumbai.outputs.runStatus == 'true'
         continue-on-error: true
         run: |
           git config --local user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git config --local user.name "github-actions[bot]"
           git pull
-          git add ./api/prizes/4/0x509a479885019fdcd1bb39cd982d1ab11857ce1d/0x95448a041d34241177b375a65efb34c61ad9e2b3/
-          git commit -m "Add draw for Goerli (SYMBOL1) draw ${{steps.drawPrizesGoerliSYMBOL1.outputs.drawIds}}"
-      - name: Commit Goerli (SYMBOL2)
-        if: steps.drawPrizesGoerliSYMBOL2.outputs.runStatus == 'true'
-        continue-on-error: true
-        run: |
-          git config --local user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git config --local user.name "github-actions[bot]"
-          git pull
-          git add ./api/prizes/4/0x509a479885019fdcd1bb39cd982d1ab11857ce1d/0x22d7d499d13ee75210a0f3215a2d8942b5b233b4/
-          git commit -m "Add draw for Goerli (SYMBOL2) draw ${{steps.drawPrizesGoerliSYMBOL2.outputs.drawIds}}"
+          git add ./api/prizes/80001
+          git commit -m "Add draw winners for Goerli - Draw #${{steps.drawPrizesMumbai.outputs.drawId}}"
+      # - name: Commit Goerli (SYMBOL1)
+      #   if: steps.drawPrizesGoerliSYMBOL1.outputs.runStatus == 'true'
+      #   continue-on-error: true
+      #   run: |
+      #     git config --local user.email "41898282+github-actions[bot]@users.noreply.github.com"
+      #     git config --local user.name "github-actions[bot]"
+      #     git pull
+      #     git add ./api/prizes/4/0x509a479885019fdcd1bb39cd982d1ab11857ce1d/0x95448a041d34241177b375a65efb34c61ad9e2b3/
+      #     git commit -m "Add draw for Goerli (SYMBOL1) draw #${{steps.drawPrizesGoerliSYMBOL1.outputs.drawId}}"
+      # - name: Commit Goerli (SYMBOL2)
+      #   if: steps.drawPrizesGoerliSYMBOL2.outputs.runStatus == 'true'
+      #   continue-on-error: true
+      #   run: |
+      #     git config --local user.email "41898282+github-actions[bot]@users.noreply.github.com"
+      #     git config --local user.name "github-actions[bot]"
+      #     git pull
+      #     git add ./api/prizes/4/0x509a479885019fdcd1bb39cd982d1ab11857ce1d/0x22d7d499d13ee75210a0f3215a2d8942b5b233b4/
+      #     git commit -m "Add draw for Goerli (SYMBOL2) draw #${{steps.drawPrizesGoerliSYMBOL2.outputs.drawIds}}"
       # -------------------------------------------------------- #
       # Push Draw Prizes Computation
       # -------------------------------------------------------- #
       - name: Push changes (if required)
         uses: ad-m/github-push-action@master
-        if: steps.drawPrizesGoerliSYMBOL1.outputs.runStatus == 'true' || steps.drawPrizesGoerliSYMBOL2.outputs.runStatus == 'true'
+        if: steps.drawPrizesMumbai.outputs.runStatus == 'true' #|| steps.drawPrizesGoerliSYMBOL2.outputs.runStatus == 'true'
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           branch: ${{ github.ref }}
