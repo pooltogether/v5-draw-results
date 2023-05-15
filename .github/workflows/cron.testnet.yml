@@ -27,6 +27,10 @@ jobs:
         uses: bahmutov/npm-install@v1
         with:
           install-command: yarn
+      - name: Install Typescript
+        run: |
+          npm install -g typescript
+          echo "$(npm -g bin)" >> $GITHUB_PATH
       - name: Install PoolTogether V5 CLI
         run: |
           npm install -g @pooltogether/v5-cli@0.0.1-beta.1
