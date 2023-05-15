@@ -12,6 +12,7 @@
   "dependencies": {
     "@actions/core": "1.9.0",
     "@pooltogether/v5-cli": "^0.0.1-beta.1",
+    "@types/node": "^20.1.4",
     "typescript": "^5.0.4"
   }
 }
