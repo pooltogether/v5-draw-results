@@ -27,9 +27,9 @@ jobs:
         uses: bahmutov/npm-install@v1
         with:
           install-command: yarn
-      - name: Install PoolTogether V5 Autotasks Library
+      - name: Install PoolTogether V5 CLI
         run: |
-          npm install -g @pooltogether/v5-autotasks-library@0.0.1-beta.2
+          npm install -g @pooltogether/v5-cli@0.0.1-beta.1
           echo "$(npm -g bin)" >> $GITHUB_PATH
       # -------------------------------------------------------- #
       # Mumbai (Token Symbol)
