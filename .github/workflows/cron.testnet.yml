@@ -13,7 +13,7 @@ jobs:
     strategy:
       max-parallel: 1
       matrix:
-        node: ["16.13.0"]
+        node: ["18.16.0"]
         os: [ubuntu-latest]
     steps:
       - name: Checkout repo
