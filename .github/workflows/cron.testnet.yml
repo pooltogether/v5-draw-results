@@ -44,7 +44,7 @@ jobs:
       # -------------------------------------------------------- #
       - name: Mumbai Draw Prizes
         id: drawPrizesMumbai
-        uses: maddog2050/executable-wrapper@v1
+        uses: maddog2050/executable-wrapper@v1.0.9
         continue-on-error: false
         with:
           run_command: ptv5 --version
