@@ -10,6 +10,6 @@
     "pwd": "echo ${PWD}"
   },
   "dependencies": {
-    "@actions/core": "1.9.0",
+    "@actions/core": "1.9.0"
   }
 }
