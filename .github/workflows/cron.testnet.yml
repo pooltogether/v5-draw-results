@@ -48,7 +48,7 @@ jobs:
       # -------------------------------------------------------- #
       - name: Mumbai Draw Prizes
         id: drawPrizesMumbai
-        uses: chuckbergeron/executable-wrapper@f94b435
+        uses: chuckbergeron/executable-wrapper@f94b435740d6b958c2d7eb76c77657e761819cfe
         continue-on-error: false
         with:
           run_command: ptv5 --version
