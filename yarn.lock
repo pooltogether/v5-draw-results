@@ -703,10 +703,10 @@
   resolved "https://registry.yarnpkg.com/@pooltogether/prize-api-schema/-/prize-api-schema-1.0.0-beta.1.tgz#173d36fa93e03dcaca638706c17f9d01db9e07d7"
   integrity sha512-6rSz5xQjBa+rqXjpU83cwBsOdeHdP3KAE+y4dMCDtMx/2qXzP9A20Py9tbTjUS8iivlGYO766jSFneDWOKrdqQ==
 
-"@pooltogether/v5-cli@^0.0.1-beta.2":
-  version "0.0.1-beta.2"
-  resolved "https://registry.yarnpkg.com/@pooltogether/v5-cli/-/v5-cli-0.0.1-beta.2.tgz#19c7578b95de3b05fa937e214267ed3a74edbf30"
-  integrity sha512-a1lRSILLbxQTyHlVNETyL0K4bCbZygS7GGs2/aBxkoRWSj81ufYIB9yLVBvHswMfiLe0BWsDkKAH6MuZjA+tGw==
+"@pooltogether/v5-cli@0.0.1-beta.4":
+  version "0.0.1-beta.4"
+  resolved "https://registry.yarnpkg.com/@pooltogether/v5-cli/-/v5-cli-0.0.1-beta.4.tgz#7f89baa30b11d3e29929576e36c5044a87027c41"
+  integrity sha512-do1CFxOYWMC9G6//da+u5TW81LaLABrY5baOLwa5Uk9clyxdJpshPFWzD+oXIJ109Ci3rsWw+2ZXcANsYdcGMA==
   dependencies:
     "@actions/core" "^1.6.0"
     "@ethersproject/bignumber" "^5.5.0"
@@ -716,7 +716,7 @@
     "@oclif/plugin-help" "^5"
     "@oclif/plugin-plugins" "^3.0.1"
     "@pooltogether/prize-api-schema" "^1.0.0-beta.1"
-    "@pooltogether/v5-utils-js" "^0.0.1-beta.8"
+    "@pooltogether/v5-utils-js" "0.0.1-beta.9"
     ajv "^8.10.0"
     graphql "^16.3.0"
     graphql-request "^4.0.0"
@@ -724,10 +724,10 @@
     spawn-promise "^0.1.8"
     yarn "^1.22.19"
 
-"@pooltogether/v5-utils-js@^0.0.1-beta.8":
-  version "0.0.1-beta.8"
-  resolved "https://registry.yarnpkg.com/@pooltogether/v5-utils-js/-/v5-utils-js-0.0.1-beta.8.tgz#c2eab27f0036ef488d07216f955974308a8ab746"
-  integrity sha512-Bjfj8sfwwZoLBa8/IpR2Ej6prpVUdJfE2dzzb0fQPmNYQJG+DYlahVbg8V77Vv7lfdC3JvmYDYStJQMCc+mEUw==
+"@pooltogether/v5-utils-js@0.0.1-beta.9":
+  version "0.0.1-beta.9"
+  resolved "https://registry.yarnpkg.com/@pooltogether/v5-utils-js/-/v5-utils-js-0.0.1-beta.9.tgz#c3044cdf09b568864f6bb1aeb4425a388afd259b"
+  integrity sha512-IOHgNCVH9WtHHXCofOnfd06Kws5o7Iz57re5hIT5atdY7f/eYSOepC1azW8S7xTEzq5cUtyvudkT68nB5q8JPg==
   dependencies:
     "@pooltogether/contract-list-schema" "^0.1.4"
     ethereum-multicall "^2.17.0"
