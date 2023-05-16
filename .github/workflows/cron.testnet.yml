@@ -29,7 +29,7 @@ jobs:
           install-command: yarn
       - name: Install PoolTogether V5 CLI
         run: |
-          npm install -g @pooltogether/v5-cli@0.0.1-beta.4
+          npm install -g @pooltogether/v5-cli@0.0.1-beta.6
           echo "$(npm -g bin)" >> $GITHUB_PATH
       # -------------------------------------------------------- #
       # Mumbai (Token Symbol)
@@ -85,7 +85,7 @@ jobs:
           git config --local user.name "github-actions[bot]"
           git pull
           git add ./api/prizes/80001
-          git commit -m "Add draw winners for Goerli - Draw #${{steps.drawPrizesMumbai.outputs.drawId}}"
+          git commit -m "Add draw winners for Mumbai - Draw #${{steps.drawPrizesMumbai.outputs.drawId}}"
       # - name: Commit Goerli (SYMBOL1)
       #   if: steps.drawPrizesGoerliSYMBOL1.outputs.runStatus == 'true'
       #   continue-on-error: true

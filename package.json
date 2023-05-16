@@ -11,6 +11,6 @@
   },
   "dependencies": {
     "@actions/core": "1.9.0",
-    "@pooltogether/v5-cli": "0.0.1-beta.4"
+    "@pooltogether/v5-cli": "0.0.1-beta.6"
   }
 }
