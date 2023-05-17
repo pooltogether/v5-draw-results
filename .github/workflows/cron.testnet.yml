@@ -29,7 +29,7 @@ jobs:
           install-command: yarn
       - name: Install PoolTogether V5 CLI
         run: |
-          npm install -g @pooltogether/v5-cli@0.0.1-beta.6
+          npm install -g @pooltogether/v5-cli@0.0.1-beta.7
           echo "$(npm -g bin)" >> $GITHUB_PATH
       # -------------------------------------------------------- #
       # Mumbai (Token Symbol)
