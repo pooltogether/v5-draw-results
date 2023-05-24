@@ -1,0 +1,74 @@
+[
+  {
+    "vault": "0x12032ca7c271c1ca5f272040b15d1a19145c6323",
+    "tier": 2,
+    "winner": "0x97875e27bb5e9c10446eb393c6a5a0b3f4f80812",
+    "amount": "3429791314582008"
+  },
+  {
+    "vault": "0x12032ca7c271c1ca5f272040b15d1a19145c6323",
+    "tier": 2,
+    "winner": "0xdac259c20f8eef5b96e3371a56907f683378429f",
+    "amount": "3429791314582008"
+  },
+  {
+    "vault": "0x662748f2c5d269ac30d8d35ca1c0c2c658371187",
+    "tier": 2,
+    "winner": "0x03f1c43581517edea27bb9358e327bf2f05f5523",
+    "amount": "3429791314582008"
+  },
+  {
+    "vault": "0x662748f2c5d269ac30d8d35ca1c0c2c658371187",
+    "tier": 2,
+    "winner": "0x10cf82328e53e69b9d6b4d28317f14df573cecca",
+    "amount": "3429791314582008"
+  },
+  {
+    "vault": "0x662748f2c5d269ac30d8d35ca1c0c2c658371187",
+    "tier": 2,
+    "winner": "0x25951d21c03cc93d126a7cf20548bc165ff062c2",
+    "amount": "3429791314582008"
+  },
+  {
+    "vault": "0x662748f2c5d269ac30d8d35ca1c0c2c658371187",
+    "tier": 1,
+    "winner": "0x328598008707eb4ca45e91dc538b46059d1d4563",
+    "amount": "145708684479155077"
+  },
+  {
+    "vault": "0x662748f2c5d269ac30d8d35ca1c0c2c658371187",
+    "tier": 2,
+    "winner": "0x328598008707eb4ca45e91dc538b46059d1d4563",
+    "amount": "3429791314582008"
+  },
+  {
+    "vault": "0x662748f2c5d269ac30d8d35ca1c0c2c658371187",
+    "tier": 2,
+    "winner": "0x4e4263d7de3131acb4ddfa117e0f5c661e852a45",
+    "amount": "3429791314582008"
+  },
+  {
+    "vault": "0x662748f2c5d269ac30d8d35ca1c0c2c658371187",
+    "tier": 2,
+    "winner": "0x7bfb1057377b15014f9fb8d9f32a741c0b25d4c0",
+    "amount": "3429791314582008"
+  },
+  {
+    "vault": "0x662748f2c5d269ac30d8d35ca1c0c2c658371187",
+    "tier": 1,
+    "winner": "0x9f5ee1be8aac13388805d0ba208abb2e9474304c",
+    "amount": "145708684479155077"
+  },
+  {
+    "vault": "0x662748f2c5d269ac30d8d35ca1c0c2c658371187",
+    "tier": 1,
+    "winner": "0xe0e7b7c5ae92fe94d2ae677d81214d6ad7a11c27",
+    "amount": "145708684479155077"
+  },
+  {
+    "vault": "0x662748f2c5d269ac30d8d35ca1c0c2c658371187",
+    "tier": 2,
+    "winner": "0xe0e7b7c5ae92fe94d2ae677d81214d6ad7a11c27",
+    "amount": "3429791314582008"
+  }
+]
