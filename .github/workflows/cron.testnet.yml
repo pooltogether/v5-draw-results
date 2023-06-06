@@ -85,7 +85,7 @@ jobs:
           git config --local user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git config --local user.name "github-actions[bot]"
           git pull
-          git add ./api/prizes/4/0x509a479885019fdcd1bb39cd982d1ab11857ce1d/0x95448a041d34241177b375a65efb34c61ad9e2b3/
+          git add ./api/prizes/4
           git commit -m "Add draw for Sepolia draw #${{steps.drawPrizesSepolia.outputs.drawId}}"
       # -------------------------------------------------------- #
       # Push Draw Prizes Computation
