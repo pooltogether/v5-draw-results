@@ -30,7 +30,7 @@ jobs:
           install-command: yarn
       - name: Install PoolTogether V5 CLI
         run: |
-          npm install -g @pooltogether/v5-cli@0.0.1-beta.12
+          npm install -g @pooltogether/v5-cli@0.0.1-beta.13
           echo "$(npm -g bin)" >> $GITHUB_PATH
       # -------------------------------------------------------- #
       # Mumbai
@@ -49,7 +49,7 @@ jobs:
         uses: chuckbergeron/executable-wrapper@f94b435740d6b958c2d7eb76c77657e761819cfe
         continue-on-error: true
         with:
-          run_command: ptv5 compute drawPrizes -o ./api/prizes -p 0xa77D6014e77F294C3297a18363f9951b3d57Eb95 -c 11155111
+          run_command: ptv5 compute drawPrizes -o ./api/prizes -p 0xC5a77bcb8cD13c5619153d46fB7379c9158a8884 -c 11155111
       # -------------------------------------------------------- #
       # Comment Error
       # -------------------------------------------------------- #
