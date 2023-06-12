@@ -1,8 +1,14 @@
 [
   {
+    "vault": "0x0b87bf0822afaecdeb367cfaaccf40c0e895f3ad",
+    "tier": 2,
+    "winner": "0xb60cdbe287d629ac6da87e838beac04ec31b7555",
+    "amount": "5283436530052541"
+  },
+  {
     "vault": "0x0c393c363bae8eebe6e1afe4716e317cbd2e9949",
     "tier": 2,
-    "winner": "0x82f13f7a547e3aff4f3a0a0dbb64750157a178c2",
+    "winner": "0x245361d9eeeb1c034f7c92f3f1f0f25c5eb05f81",
     "amount": "5283436530052541"
   },
   {
@@ -33,7 +39,7 @@
     "vault": "0x7ea2e76587962c526b60492bd8342aae859f1219",
     "tier": 1,
     "winner": "0x64220a3cbff0baa05cf8831849d19268c684bdad",
-    "amount": "1319981243571210412"
+    "amount": "659990621785605206"
   },
   {
     "vault": "0x7ea2e76587962c526b60492bd8342aae859f1219",
@@ -75,7 +81,7 @@
     "vault": "0x7ea2e76587962c526b60492bd8342aae859f1219",
     "tier": 1,
     "winner": "0xeb65be921d02798fc1ef32b39499ff6094a9c75e",
-    "amount": "1319981243571210412"
+    "amount": "659990621785605206"
   },
   {
     "vault": "0x7ea2e76587962c526b60492bd8342aae859f1219",
@@ -85,20 +91,26 @@
   },
   {
     "vault": "0xe288828ffb4087f633e17d4715103648266c0cdb",
+    "tier": 1,
+    "winner": "0x403179d789c2e6561bdcd8495c30e4d68438bfae",
+    "amount": "659990621785605206"
+  },
+  {
+    "vault": "0xe288828ffb4087f633e17d4715103648266c0cdb",
+    "tier": 1,
+    "winner": "0x9942095ceac6fd0733fda15b2c83811b0b16609c",
+    "amount": "659990621785605206"
+  },
+  {
+    "vault": "0xe288828ffb4087f633e17d4715103648266c0cdb",
     "tier": 2,
-    "winner": "0xac6ee58791736c1a4983b68b822c100e6f400213",
+    "winner": "0xb6bc64eee619e9fb997b0374d57a3472cb76ef28",
     "amount": "5283436530052541"
   },
   {
     "vault": "0xe288828ffb4087f633e17d4715103648266c0cdb",
     "tier": 2,
     "winner": "0xe0e7b7c5ae92fe94d2ae677d81214d6ad7a11c27",
-    "amount": "5283436530052541"
-  },
-  {
-    "vault": "0xe288828ffb4087f633e17d4715103648266c0cdb",
-    "tier": 2,
-    "winner": "0xe597335683d5ed7db8fa9918f4c6007274a8b823",
     "amount": "5283436530052541"
   }
 ]
