@@ -63,7 +63,7 @@ jobs:
             await github.rest.issues.create({
               owner: context.repo.owner,
               repo: context.repo.repo,
-              title: `Draw Prizes Failed: Exit Code ${process.env.exitCode} (${process.env.errorcode})`
+              title: `Draw Prizes Failed: Exit Code 1`
             })
       # -------------------------------------------------------- #
       # Git Commit
