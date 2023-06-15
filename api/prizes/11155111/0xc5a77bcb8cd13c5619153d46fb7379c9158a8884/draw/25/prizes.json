@@ -3,66 +3,54 @@
     "vault": "0x0b87bf0822afaecdeb367cfaaccf40c0e895f3ad",
     "tier": 2,
     "winner": "0xd4311d88541733ca49ad6847d11f9567ff7cd17b",
-    "amount": "73401390984730837"
+    "amount": "85634956148852643"
   },
   {
     "vault": "0x0c393c363bae8eebe6e1afe4716e317cbd2e9949",
     "tier": 2,
     "winner": "0xf2c8caeb3c1af91b934da0aab7facde9e2e77f7e",
-    "amount": "73401390984730837"
-  },
-  {
-    "vault": "0x7ea2e76587962c526b60492bd8342aae859f1219",
-    "tier": 2,
-    "winner": "0x4ab1c943cc9eb4741e1cffe837a5e9549d68688b",
-    "amount": "73401390984730837"
-  },
-  {
-    "vault": "0x7ea2e76587962c526b60492bd8342aae859f1219",
-    "tier": 1,
-    "winner": "0x8bdd657efd5960dcd018aec2bdcf301e5ccd10c3",
-    "amount": "2515971481002781895"
+    "amount": "85634956148852643"
   },
   {
     "vault": "0xe288828ffb4087f633e17d4715103648266c0cdb",
     "tier": 2,
     "winner": "0x295b790a21132195764a176dc4570e3e5ac605d4",
-    "amount": "73401390984730837"
+    "amount": "85634956148852643"
   },
   {
     "vault": "0xe288828ffb4087f633e17d4715103648266c0cdb",
     "tier": 2,
     "winner": "0x3a9039b1a45d26464316fbb960916d4cbce27bad",
-    "amount": "73401390984730837"
+    "amount": "85634956148852643"
   },
   {
     "vault": "0xe288828ffb4087f633e17d4715103648266c0cdb",
     "tier": 1,
     "winner": "0x6b162c131ccd16be151b2238a14a7430f4abd3d9",
-    "amount": "2515971481002781895"
+    "amount": "3354628641337042527"
   },
   {
     "vault": "0xe288828ffb4087f633e17d4715103648266c0cdb",
     "tier": 1,
     "winner": "0x7352bf0ee5082fafaabe5b7f0ff932ccddf0b2d6",
-    "amount": "2515971481002781895"
+    "amount": "3354628641337042527"
   },
   {
     "vault": "0xe288828ffb4087f633e17d4715103648266c0cdb",
     "tier": 1,
     "winner": "0x7706f001705895f4141fc3d8f03c9e0a62517691",
-    "amount": "2515971481002781895"
+    "amount": "3354628641337042527"
   },
   {
     "vault": "0xe288828ffb4087f633e17d4715103648266c0cdb",
     "tier": 2,
     "winner": "0xf580be9b451972168e132a89c34850ad9550f992",
-    "amount": "73401390984730837"
+    "amount": "85634956148852643"
   },
   {
     "vault": "0xebc5c1257a6db56d2c3c9466a5271c5be4fb1397",
     "tier": 2,
     "winner": "0xc62b4e45762c05e8d28e203a9824c25d6de695d5",
-    "amount": "73401390984730837"
+    "amount": "85634956148852643"
   }
 ]
