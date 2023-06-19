@@ -1,8 +1,8 @@
 {
   "status": "SUCCESS",
-  "createdAt": 1687186852102,
-  "updatedAt": 1687187034282,
-  "runtime": 182180,
+  "createdAt": 1687190462321,
+  "updatedAt": 1687190601908,
+  "runtime": 139587,
   "meta": {
     "prizeLength": 38,
     "amountsTotal": "82210514918417065825",
