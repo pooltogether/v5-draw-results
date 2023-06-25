@@ -3,7 +3,7 @@
     "vault": "0x7ea2e76587962c526b60492bd8342aae859f1219",
     "tier": 2,
     "winner": "0x6a5262a664a5509092b467626928aaba292bd211",
-    "claimed": false,
-    "amount": "8748692737195749838"
+    "claimed": true,
+    "amount": "2187173184298937459"
   }
 ]
