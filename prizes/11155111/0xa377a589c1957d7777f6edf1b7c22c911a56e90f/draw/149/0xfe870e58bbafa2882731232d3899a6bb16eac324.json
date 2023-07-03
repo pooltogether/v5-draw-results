@@ -1,9 +1,9 @@
 [
   {
     "vault": "0x0771ba4b988c66afb02f9adf21f6e3a14d33c24e",
-    "winner": "0x0c74886a93475dfcc88870f97a542d7b1362a92d",
+    "winner": "0xfe870e58bbafa2882731232d3899a6bb16eac324",
     "tier": 4,
-    "prizeIndex": 18,
+    "prizeIndex": 11,
     "claimed": false,
     "amount": "26735762806926"
   }
