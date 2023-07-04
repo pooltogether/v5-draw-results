@@ -28,7 +28,7 @@
     "winner": "0x0464acac215c9405f29d4a63f16362f0c9757057",
     "tier": 5,
     "prizeIndex": 69,
-    "claimed": false,
+    "claimed": true,
     "amount": "239106917398"
   },
   {
@@ -60,7 +60,7 @@
     "winner": "0x070905d9121ed095013f8403ecb2c6ae4104e0ac",
     "tier": 4,
     "prizeIndex": 113,
-    "claimed": false,
+    "claimed": true,
     "amount": "1091132064675"
   },
   {
@@ -588,7 +588,7 @@
     "winner": "0xcac9b12498f3b8c2f4674a8818b54cddbef6ff79",
     "tier": 3,
     "prizeIndex": 23,
-    "claimed": false,
+    "claimed": true,
     "amount": "39373121809152"
   },
   {
@@ -876,7 +876,7 @@
     "winner": "0x1099fc9a283ee7355f55a395503b4308f380c1ff",
     "tier": 4,
     "prizeIndex": 242,
-    "claimed": false,
+    "claimed": true,
     "amount": "1091132064675"
   },
   {
@@ -900,7 +900,7 @@
     "winner": "0x1099fc9a283ee7355f55a395503b4308f380c1ff",
     "tier": 5,
     "prizeIndex": 44,
-    "claimed": false,
+    "claimed": true,
     "amount": "239106917398"
   },
   {
@@ -956,7 +956,7 @@
     "winner": "0x229efd0d3cb8a4fa10c27226a743121925a3074b",
     "tier": 3,
     "prizeIndex": 57,
-    "claimed": false,
+    "claimed": true,
     "amount": "39373121809152"
   },
   {
@@ -1356,7 +1356,7 @@
     "winner": "0x10bc24f9e7e80b4342c62a3a7a46d9f6b78d39ef",
     "tier": 3,
     "prizeIndex": 62,
-    "claimed": false,
+    "claimed": true,
     "amount": "39373121809152"
   },
   {
@@ -1380,7 +1380,7 @@
     "winner": "0x10bc24f9e7e80b4342c62a3a7a46d9f6b78d39ef",
     "tier": 4,
     "prizeIndex": 152,
-    "claimed": false,
+    "claimed": true,
     "amount": "1091132064675"
   },
   {
@@ -1412,7 +1412,7 @@
     "winner": "0x10bc24f9e7e80b4342c62a3a7a46d9f6b78d39ef",
     "tier": 5,
     "prizeIndex": 53,
-    "claimed": false,
+    "claimed": true,
     "amount": "239106917398"
   },
   {
@@ -2244,7 +2244,7 @@
     "winner": "0xd9bd78f50fa9d33894b06da3b0e7ec2dedc416b7",
     "tier": 2,
     "prizeIndex": 3,
-    "claimed": false,
+    "claimed": true,
     "amount": "1328222775823789"
   },
   {
