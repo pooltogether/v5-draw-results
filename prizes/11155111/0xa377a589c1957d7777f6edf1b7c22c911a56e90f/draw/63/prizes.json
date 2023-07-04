@@ -1,0 +1,146 @@
+[
+  {
+    "vault": "0x0771ba4b988c66afb02f9adf21f6e3a14d33c24e",
+    "winner": "0x070905d9121ed095013f8403ecb2c6ae4104e0ac",
+    "tier": 2,
+    "prizeIndex": 12,
+    "claimed": false,
+    "amount": "2322127697544737"
+  },
+  {
+    "vault": "0x0771ba4b988c66afb02f9adf21f6e3a14d33c24e",
+    "winner": "0x1854ca3a651a6430172b9aaa03bcf4598d1c6c38",
+    "tier": 2,
+    "prizeIndex": 1,
+    "claimed": false,
+    "amount": "2322127697544737"
+  },
+  {
+    "vault": "0x0771ba4b988c66afb02f9adf21f6e3a14d33c24e",
+    "winner": "0x4c6e1303a7ec7f29eccfbf9baa4842bd286660f3",
+    "tier": 3,
+    "prizeIndex": 3,
+    "claimed": false,
+    "amount": "568684334092588"
+  },
+  {
+    "vault": "0x0771ba4b988c66afb02f9adf21f6e3a14d33c24e",
+    "winner": "0x5b41de0754e8aafd1615d726be4b17be46b68aa9",
+    "tier": 1,
+    "prizeIndex": 3,
+    "claimed": false,
+    "amount": "41798298555805275"
+  },
+  {
+    "vault": "0x0771ba4b988c66afb02f9adf21f6e3a14d33c24e",
+    "winner": "0x5b41de0754e8aafd1615d726be4b17be46b68aa9",
+    "tier": 3,
+    "prizeIndex": 7,
+    "claimed": false,
+    "amount": "568684334092588"
+  },
+  {
+    "vault": "0x0771ba4b988c66afb02f9adf21f6e3a14d33c24e",
+    "winner": "0xddf1a2463636e7d154b23ae8fe8a53b6b7c3d2c9",
+    "tier": 3,
+    "prizeIndex": 3,
+    "claimed": false,
+    "amount": "568684334092588"
+  },
+  {
+    "vault": "0x0771ba4b988c66afb02f9adf21f6e3a14d33c24e",
+    "winner": "0xfa5aee98bff420e71315d6c9611d4f109e8b14cb",
+    "tier": 2,
+    "prizeIndex": 3,
+    "claimed": false,
+    "amount": "2322127697544737"
+  },
+  {
+    "vault": "0x0771ba4b988c66afb02f9adf21f6e3a14d33c24e",
+    "winner": "0xfe870e58bbafa2882731232d3899a6bb16eac324",
+    "tier": 2,
+    "prizeIndex": 5,
+    "claimed": false,
+    "amount": "2322127697544737"
+  },
+  {
+    "vault": "0x0ec780be0191f8a364faccde91d13be6f96632be",
+    "winner": "0x1099fc9a283ee7355f55a395503b4308f380c1ff",
+    "tier": 2,
+    "prizeIndex": 13,
+    "claimed": false,
+    "amount": "2322127697544737"
+  },
+  {
+    "vault": "0x8faf98698e4ff29149a8a9d06db20e3509f3754b",
+    "winner": "0x3994537274f3ff3eefc413e0d669b05d6446d46b",
+    "tier": 2,
+    "prizeIndex": 5,
+    "claimed": false,
+    "amount": "2322127697544737"
+  },
+  {
+    "vault": "0x8faf98698e4ff29149a8a9d06db20e3509f3754b",
+    "winner": "0x3994537274f3ff3eefc413e0d669b05d6446d46b",
+    "tier": 2,
+    "prizeIndex": 14,
+    "claimed": false,
+    "amount": "2322127697544737"
+  },
+  {
+    "vault": "0x8faf98698e4ff29149a8a9d06db20e3509f3754b",
+    "winner": "0x532e5508fe6a0288e247158bee9944e0ae3285d4",
+    "tier": 2,
+    "prizeIndex": 11,
+    "claimed": false,
+    "amount": "2322127697544737"
+  },
+  {
+    "vault": "0x8faf98698e4ff29149a8a9d06db20e3509f3754b",
+    "winner": "0x9bd85eafd1972bcc70730b5429c21abf4254f355",
+    "tier": 2,
+    "prizeIndex": 4,
+    "claimed": false,
+    "amount": "2322127697544737"
+  },
+  {
+    "vault": "0x8faf98698e4ff29149a8a9d06db20e3509f3754b",
+    "winner": "0x9bd85eafd1972bcc70730b5429c21abf4254f355",
+    "tier": 3,
+    "prizeIndex": 2,
+    "claimed": false,
+    "amount": "568684334092588"
+  },
+  {
+    "vault": "0x8faf98698e4ff29149a8a9d06db20e3509f3754b",
+    "winner": "0x9bd85eafd1972bcc70730b5429c21abf4254f355",
+    "tier": 3,
+    "prizeIndex": 5,
+    "claimed": false,
+    "amount": "568684334092588"
+  },
+  {
+    "vault": "0x8faf98698e4ff29149a8a9d06db20e3509f3754b",
+    "winner": "0xeac160bf334865b5724674621da0ccdd9adae4aa",
+    "tier": 1,
+    "prizeIndex": 3,
+    "claimed": false,
+    "amount": "41798298555805275"
+  },
+  {
+    "vault": "0x8faf98698e4ff29149a8a9d06db20e3509f3754b",
+    "winner": "0xeac160bf334865b5724674621da0ccdd9adae4aa",
+    "tier": 3,
+    "prizeIndex": 5,
+    "claimed": false,
+    "amount": "568684334092588"
+  },
+  {
+    "vault": "0x8faf98698e4ff29149a8a9d06db20e3509f3754b",
+    "winner": "0xfc1bc320b93cd1111b3e7d7139fb41f595ea3ece",
+    "tier": 3,
+    "prizeIndex": 6,
+    "claimed": false,
+    "amount": "568684334092588"
+  }
+]

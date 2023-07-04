@@ -1,0 +1,16 @@
+{
+  "status": "SUCCESS",
+  "createdAt": 1688483877734,
+  "updatedAt": 1688483883003,
+  "runtime": 5269,
+  "meta": {
+    "numberOfTiers": 3,
+    "prizeLength": 2,
+    "amountsTotal": "33565518383614587540",
+    "tierPrizeAmounts": {
+      "0": "31742281650062627900",
+      "1": "1815816736501743826",
+      "2": "7419997050215814"
+    }
+  }
+}
